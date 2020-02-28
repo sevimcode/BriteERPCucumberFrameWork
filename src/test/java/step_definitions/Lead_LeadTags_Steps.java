@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.CRMLandingPage;
 import pages.HomePage;
+import pages.Lead_LeadTag_Page;
 import pages.LoginPage;
 import utilities.Config;
 import utilities.Driver;
@@ -14,8 +15,8 @@ import utilities.Driver;
 public class Lead_LeadTags_Steps{
 
     LoginPage loginPage = new LoginPage ();
-    HomePage homePage = new HomePage ();
     CRMLandingPage crmLandingPage = new CRMLandingPage ();
+    Lead_LeadTag_Page leadLeadTagPage = new Lead_LeadTag_Page ();
 
     @When("User is on BriteERP loginpage")
     public void user_is_on_BriteERP_loginpage() {
@@ -55,6 +56,23 @@ public class Lead_LeadTags_Steps{
     }
 
 
+    @And("Click on Lead Oportunities")
+    public void clickOnLeadOportunities() {
+        crmLandingPage.LeadOportunities.click ();
+
+    }
+
+    @And("Click on Lead Tags")
+    public void clickOnLeadTags() {
+        crmLandingPage.LeadOpotunitiesLeadTags.click ();
+    }
+
+    @Then("User should be able to search on lead tags")
+    public void userShouldBeAbleToSeeCreateButton() {
+        Assert.assertTrue (leadLeadTagPage.searchBox.isDisplayed ());
+        Assert.assertTrue (leadLeadTagPage.searchButton.isDisplayed ());
+
+    }
 }
 
 
