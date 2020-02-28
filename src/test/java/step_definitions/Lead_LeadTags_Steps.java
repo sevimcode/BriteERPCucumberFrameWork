@@ -17,6 +17,7 @@ public class Lead_LeadTags_Steps{
 
     @When("User is on BriteERP loginpage")
     public void user_is_on_BriteERP_loginpage() {
+
         Driver.getDriver ().get (Config.getProperty ("briteERPUrl"));
     }
 
