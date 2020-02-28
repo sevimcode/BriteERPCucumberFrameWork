@@ -9,5 +9,8 @@
         <module name="BriteERPCucumberFrameWork" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BriteERPCucumberFrameWork" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
