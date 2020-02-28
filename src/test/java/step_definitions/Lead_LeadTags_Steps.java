@@ -1,8 +1,10 @@
 package step_definitions;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import pages.CRMLandingPage;
 import pages.HomePage;
 import pages.LoginPage;
@@ -33,7 +35,7 @@ public class Lead_LeadTags_Steps{
 
     @Then("User should be able to login")
     public void user_should_be_able_to_login() {
-        Assert.assertEquals (Driver.getDriver ().getTitle (),"displayedUser");
+        Assert.assertEquals (Driver.getDriver ().getTitle (),"Login | Best solution for startups");
     }
 
     @When("User should be click login button")
@@ -47,7 +49,10 @@ public class Lead_LeadTags_Steps{
     }
 
 
-
+    @And("User input wrongPassword in password box")
+    public void userInputWrongPasswordInPasswordBox() {
+        loginPage.passwordInput.sendKeys (Config.getProperty ("wrongPassword") + Keys.ENTER);
+    }
 }
 
 
