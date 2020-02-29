@@ -3,12 +3,16 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utilities.Config;
 import utilities.Driver;
 
 public class CRMLandingPage{
 
     public CRMLandingPage(){
-        PageFactory.initElements (Driver.getDriver (), this);
+        public void user_is_on_BriteERP_loginpage() {
+            Driver.getDriver ().get (Config.getProperty ("briteERPUrl"));
+        }
+
 
     }
 
