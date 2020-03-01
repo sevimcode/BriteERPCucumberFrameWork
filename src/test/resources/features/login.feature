@@ -11,5 +11,5 @@ Then User should be able to login
 Scenario:User should be able to see message when enter wrong password
 When User is on BriteERP loginpage
 And User input "username" in username box
-And User input wrongPassword in password box
+And User input "wrongPassword" in password box
 Then User should be able to see message

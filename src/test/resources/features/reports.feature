@@ -1,5 +1,5 @@
 Feature: Reports functions
-  @smoke
+  @smoke @firstParallel
   Scenario: User should see pipeline reports
     When User is on BriteERP loginpage
     And User input "username" in username box
@@ -8,7 +8,7 @@ Feature: Reports functions
     Then Click on CRM module
     Then Click on Pipeline under Reporting section
     Then User should see pipeline report or message that report is not available
-  @smoke
+  @smoke @firstParallel
   Scenario: User should see activity reports
     When User is on BriteERP loginpage
     And User input "username" in username box
@@ -17,7 +17,7 @@ Feature: Reports functions
     Then Click on CRM module
     Then Click on Activities under Reporting section
     Then User should see activities report or message that report is not available
-  @dmytro @smoke
+  @dmytro @smoke @secondParallel
   Scenario: User should see sale channel reports
     When User is on BriteERP loginpage
     And User input "username" in username box
