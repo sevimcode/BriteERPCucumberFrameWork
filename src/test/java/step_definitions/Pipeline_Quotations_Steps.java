@@ -1,20 +1,17 @@
 package step_definitions;
 
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import org.junit.Assert;
-import pages.CRMLandingPage;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.Pipeline_Quotations_Page;
-import utilities.Config;
 import utilities.Driver;
 
 public class Pipeline_Quotations_Steps {
     LoginPage loginPage = new LoginPage ();
     HomePage homePage = new HomePage ();
-    CRMLandingPage crmLandingPage = new CRMLandingPage ();
     Pipeline_Quotations_Page pipeline_quotations_page = new Pipeline_Quotations_Page();
+
 
 
     @Then("user should be able to see the CRM module Landing page")
