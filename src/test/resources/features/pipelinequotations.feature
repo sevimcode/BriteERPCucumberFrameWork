@@ -1,4 +1,4 @@
-Feature: Pipeline quotations
+ Feature: Pipeline quotations
 
 Scenario:User should be able to login
 When User is on BriteERP loginpage
