@@ -9,12 +9,11 @@ import utilities.Driver;
 public class CRMLandingPage{
 
     public CRMLandingPage(){
-        public void user_is_on_BriteERP_loginpage() {
-            Driver.getDriver ().get (Config.getProperty ("briteERPUrl"));
+        PageFactory.initElements(Driver.getDriver(), this);
         }
 
 
-    }
+
 
     @FindBy (css ="a[data-menu='274']")
     public WebElement PipelinePipeline;

@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
 //by default dryRun is false it means run the scenario and execute the steps
             tags = "@asel", // when you want to run specific scenario
 
-            dryRun = false   //  you use dryRun = true do not execute the steps to see required implementations you can copy and implement in stepDefs
+            dryRun = true   //  you use dryRun = true do not execute the steps to see required implementations you can copy and implement in stepDefs
 //by default dryRun is false it means run the scenario and execute the steps
 
 
