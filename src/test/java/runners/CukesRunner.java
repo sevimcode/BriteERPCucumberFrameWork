@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         plugin = "html:target/cucumber-reports",  // it generates html reports in target folder
         dryRun = false,   //  you use dryRun = true do not execute the steps to see required implementations you can copy and implement in stepDefs
 //by default dryRun is false it means run the scenario and execute the steps
-        tags = "@negativelogin" // when you want to run specific scenario
+        tags = "@lostReasonsNameCheckbox" // when you want to run specific scenario
 
 )
 
@@ -25,7 +25,7 @@ import org.junit.runner.RunWith;
 
 
     }
-    }
+
 
 
 
