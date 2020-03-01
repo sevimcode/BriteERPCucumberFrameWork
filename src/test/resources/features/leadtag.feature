@@ -9,5 +9,23 @@ Feature: Leads and Opportunities Lead Tag functionality
     And Click on Lead Oportunities
     And Click on Lead Tags
 
-    Scenario: Verifying create button on Lead Tag
+  Scenario: Verifying search button on Lead Tag
       Then User should be able to search on lead tags
+
+  Scenario: Verifying create button on Lead Tag
+    Then User should be able to create on lead tags
+
+  Scenario: Verifying import button on Lead Tag
+    Then User should be able to import on lead tags
+
+  Scenario: Verifying advance search button on Lead Tag
+    Then User should be able to advance search on lead tags
+
+  Scenario: Verifying filter dropdown button on Lead Tag
+    Then User should be able to filterdropdown search on lead tags
+
+  Scenario: Verifying search display button on Lead Tag
+    Then User should be able to search display search on lead tags
+
+
+
