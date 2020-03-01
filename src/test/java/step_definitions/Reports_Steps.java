@@ -4,6 +4,7 @@ import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import pages.HomePage;
 import pages.Reports_Page;
+import utilities.SeleniumUtils;
 
 public class Reports_Steps{
     HomePage homePage = new HomePage();
@@ -11,6 +12,7 @@ public class Reports_Steps{
 
     @Then("Click on CRM module")
     public void click_on_CRM_module() {
+        SeleniumUtils.pause(2);
         homePage.CRMmodule.click();
     }
 
