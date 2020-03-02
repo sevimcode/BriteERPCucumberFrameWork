@@ -7,16 +7,28 @@ import utilities.Driver;
 
 public class Lead_LeadTag_Page{
 
-    public Lead_LeadTag_Page(){
-        PageFactory.initElements (Driver.getDriver (), this);
+    public Lead_LeadTag_Page() {
+        PageFactory.initElements (Driver.getDriver () , this);
 
     }
-    @FindBy(id = "")
+
+    @FindBy(xpath = "//button[contains(text(),'Create')]")
+    public WebElement createButton;
+
+    @FindBy(xpath = "//button[contains(text(),'Import')]")
+    public WebElement importButton;
+
+    @FindBy(xpath = " //input[@placeholder='Search...']")
     public WebElement searchBox;
 
-    @FindBy (xpath = "")
-    public WebElement searchButton;
+    @FindBy(xpath = "//span[@title='Advanced Search...']")
+    public WebElement advanceSearchButton;
+
+    @FindBy(xpath = "//button[@data-toggle='dropdown']")
+    public WebElement filterDropDown;
+
+    @FindBy(xpath = "//tbody/tr")
+    public WebElement searchDisplay;
 
 }
-
 

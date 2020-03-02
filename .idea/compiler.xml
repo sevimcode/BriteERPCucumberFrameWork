@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="BriteERPCucumberFrameWork" />
+        <module name="chicago14-cucumber-junit" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="BriteERPCucumberFrameWork" target="8" />
+      <module name="chicago14-cucumber-junit" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

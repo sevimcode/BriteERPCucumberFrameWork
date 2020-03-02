@@ -18,5 +18,10 @@ public class Config_ActivityTypes_Page{
     @FindBy (xpath = "")
     public WebElement searchButton;
 
+
+    @FindBy(xpath = "//a[@data-menu-xmlid='crm.crm_team_menu_config_activity_types")
+    public WebElement activityTypes;
+
+
 }
 

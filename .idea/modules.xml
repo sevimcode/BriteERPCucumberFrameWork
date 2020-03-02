@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/BriteERPCucumberFrameWork.iml" filepath="$PROJECT_DIR$/.idea/BriteERPCucumberFrameWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chicago14-cucumber-junit.iml" filepath="$PROJECT_DIR$/chicago14-cucumber-junit.iml" />
     </modules>
   </component>
 </project>
