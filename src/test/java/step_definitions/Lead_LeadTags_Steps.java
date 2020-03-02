@@ -72,8 +72,34 @@ public class Lead_LeadTags_Steps{
     @Then("User should be able to search on lead tags")
     public void userShouldBeAbleToSeeCreateButton() {
         Assert.assertTrue (leadLeadTagPage.searchBox.isDisplayed ());
-        Assert.assertTrue (leadLeadTagPage.searchButton.isDisplayed ());
 
+
+    }
+
+    @Then("User should be able to create on lead tags")
+    public void userShouldBeAbleToCreateOnLeadTags() {
+        Assert.assertTrue (leadLeadTagPage.createButton.isDisplayed ());
+
+    }
+
+    @Then("User should be able to import on lead tags")
+    public void userShouldBeAbleToImportOnLeadTags() {
+        Assert.assertTrue (leadLeadTagPage.importButton.isDisplayed ());
+    }
+
+    @Then("User should be able to advance search on lead tags")
+    public void userShouldBeAbleToAdvanceSearchOnLeadTags() {
+        Assert.assertTrue (leadLeadTagPage.advanceSearchButton.isDisplayed ());
+    }
+
+    @Then("User should be able to filterdropdown search on lead tags")
+    public void userShouldBeAbleToFilterdropdownSearchOnLeadTags() {
+        Assert.assertTrue (leadLeadTagPage.filterDropDown.isDisplayed ());
+    }
+
+    @Then("User should be able to search display search on lead tags")
+    public void userShouldBeAbleToSearchDisplaySearchOnLeadTags() {
+        Assert.assertTrue (leadLeadTagPage.searchDisplay.isDisplayed ());
     }
 }
 
