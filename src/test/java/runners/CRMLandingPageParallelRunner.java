@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/default-cucumber-reports",
                 "json:target/parallel-cucumber2.json",
         },
-        features = "src/test/resources/features/login.feature",
+        features = "src/test/resources/features/crmlandingpage.feature",
         glue = "step_definitions"
 )
 
