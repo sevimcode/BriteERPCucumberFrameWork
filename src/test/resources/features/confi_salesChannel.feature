@@ -1,13 +1,14 @@
 @configSalesChannel
 Feature: Configuration sales channel verification
 
-  Scenario:User should be able to login
-  When User is on BriteERP loginpage
-  And User input "username" in username box
-  And User input "password" in password box
-  Then User should be able to login
+
 
   Scenario:verifying Sales channel module
+    When User is on BriteERP loginpage
+    And User input "username" in username box
+    And User input "password" in password box
+    And User should be click login button
+    Then Click on CRM module
     When user click on sales channel
     And user selects european check box
     And user clicks on action drop down

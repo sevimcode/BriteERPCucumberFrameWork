@@ -37,7 +37,7 @@ public class Lead_LeadTags_Steps{
 
     @Then("User should be able to login")
     public void user_should_be_able_to_login() {
-        Assert.assertEquals (Driver.getDriver ().getTitle (),"Odoo");
+        Assert.assertEquals ("Odoo", Driver.getDriver ().getTitle ());
     }
 
     @When("User should be click login button")

@@ -14,11 +14,8 @@ Feature: Lost Reasons Page functionality
     When User clicks on "Advanced Search" button
     Then New buttons "Filters", "Group By" and "Favourites" should appear under the Search field
 
-  @lostReasonsNameCheckbox
 
-  Scenario:Verifying Name checkboxes
-    When User check if "Action" button is on the page and clicks
-    Then User should be able to see dropdown menu available for click
+
 
     @lostReasonsCreateImportButton
       Scenario: Verifying Create and Import button

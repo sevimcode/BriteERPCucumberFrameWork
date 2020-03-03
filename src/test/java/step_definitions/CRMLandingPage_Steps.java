@@ -2,7 +2,10 @@ package step_definitions;
 
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.CRMLandingPage;
+import utilities.Driver;
 import utilities.SeleniumUtils;
 
 public class CRMLandingPage_Steps{
@@ -42,6 +45,8 @@ public class CRMLandingPage_Steps{
     @Then("User should be able to see Lead Tags on the menu")
     public void userShouldBeAbleToSeeLeadTagsOnTheMenu() {
         SeleniumUtils.pause (3);
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.elementToBeClickable(crmLandingPage.LeadOportunities));
         crmLandingPage.LeadOportunities.click ();
         Assert.assertTrue (crmLandingPage.LeadOpotunitiesLeadTags.isDisplayed ());
     }
