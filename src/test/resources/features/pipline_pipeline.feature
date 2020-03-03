@@ -1,11 +1,11 @@
 Feature: As a manager I should be able to manage Pipeline pipeline
+  Background: Login
+    When User is on BriteERP loginpage
+    And User input "username" in username box
+    And User input "password" in password box
+    And User should be click login button
+    And Click on CRM module
 
-
-Scenario:User should be able to login
-When User is on BriteERP loginpage
-And User input "username" in username box
-And User input "password" in password box
-Then User should be able to login
 
 
 

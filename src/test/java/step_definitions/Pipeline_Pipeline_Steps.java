@@ -9,24 +9,22 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.Pipeline_Pipeline_Page;
 
-public class Pipeline_Pipeline_Steps{
+public class Pipeline_Pipeline_Steps {
 
 
-    CRMLandingPage crmLandingPage = new CRMLandingPage ();
+    CRMLandingPage crmLandingPage = new CRMLandingPage();
     HomePage homePage = new HomePage();
     LoginPage loginPage = new LoginPage();
-    Pipeline_Pipeline_Page pipeline_pipeline_page =new Pipeline_Pipeline_Page();
+    Pipeline_Pipeline_Page pipeline_pipeline_page = new Pipeline_Pipeline_Page();
 
     @Given("User  on BriteERP  page")
     public void user_on_BriteERP_page() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+
     }
 
     @When("User clicks on Crm module")
     public void user_clicks_on_Crm_module() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+
     }
 
     @Then("User should be able to see create button")
@@ -36,8 +34,7 @@ public class Pipeline_Pipeline_Steps{
 
     @Given("User on CRM page")
     public void user_on_CRM_page() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+
     }
 
     @When("Click on Create button")
@@ -48,16 +45,20 @@ public class Pipeline_Pipeline_Steps{
     @When("User fills all input boxes")
     public void user_fills_all_input_boxes() {
 
+        pipeline_pipeline_page.opportunityTitleInputBox.sendKeys("abc");
+
+
+
     }
 
     @When("User clicks on create button")
     public void user_clicks_on_create_button() {
-       pipeline_pipeline_page.createButtonWindowPage.click();
+        pipeline_pipeline_page.createButtonWindowPage.click();
     }
 
     @Then("User should be able to see deal information under New column")
     public void user_should_be_able_to_see_deal_information_under_New_column() {
-      Assert.assertTrue(pipeline_pipeline_page.createdDeal.isDisplayed());
+        Assert.assertTrue(pipeline_pipeline_page.createdDeal.isDisplayed());
     }
 
     @Then("User should be able to see searchBox")
@@ -67,11 +68,13 @@ public class Pipeline_Pipeline_Steps{
 
     @Then("User should be able to see myPipeline filter")
     public void user_should_be_able_to_see_myPipeline_filter() {
-       Assert.assertTrue(pipeline_pipeline_page.pipelineFilter.isDisplayed());
+        Assert.assertTrue(pipeline_pipeline_page.pipelineFilter.isDisplayed());
     }
 
     @When("User navigates on search box")
     public void user_navigates_on_search_box() {
+
+
 
     }
 
@@ -94,7 +97,9 @@ public class Pipeline_Pipeline_Steps{
 
 
 
-}
 
+
+
+}
 
 
